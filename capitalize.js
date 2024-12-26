@@ -1,6 +1,5 @@
 function capitalize(input) {
-  const inputToArr = input.split("");
-  inputToArr[0] = inputToArr[0].toUpperCase();
-  return inputToArr.join("");
+  return input[0].toUpperCase() + input.slice(1);
 }
+
 module.exports = capitalize;

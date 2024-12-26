@@ -4,19 +4,20 @@ test("capitalize.js file", function () {
 
 const capitalize = require("./capitalize");
 
-test("turns 'strings' to 'Strings'", function () {
-  const testCases = [
-    {
-      input: "string",
-      expect: "String",
-    },
-    { input: "word", expect: "Word" },
-    { input: "hello world", expect: "Hello world" },
-    { input: "kimono", expect: "Kimono" },
-    { input: "shiminet", expect: "Shiminet" },
-  ];
-
-  testCases.forEach(function (test) {
-    expect(capitalize(test.input)).toBe(test.expect);
+describe("capitalizeFirstLetter", function () {
+  test("string > String", function () {
+    expect(capitalize("string")).toBe("String");
+  });
+  test("word > Word", function () {
+    expect(capitalize("word")).toBe("Word");
+  });
+  test("hello > Hello", function () {
+    expect(capitalize("hello")).toBe("Hello");
+  });
+  test("ninja > Ninja", function () {
+    expect(capitalize("ninja")).toBe("Ninja");
+  });
+  test("mamamia > Mamamia", function () {
+    expect(capitalize("mamamia")).toBe("Mamamia");
   });
 });
