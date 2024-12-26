@@ -5,5 +5,5 @@ function reverseString(input) {
   }
   return reversed;
 }
-console.log(reverseString("racecar"));
+console.log(reverseString("hello world"));
 module.exports = reverseString;

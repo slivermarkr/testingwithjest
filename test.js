@@ -42,3 +42,36 @@ describe("reverseStringTest", function () {
     expect(reverseString("racecar")).toBe("racecar");
   });
 });
+
+// calculator object
+test("calculator", function () {
+  expect(require("./calculator.js")).toBeDefined();
+});
+
+const calculator = require("./calculator");
+
+describe("calculatorTest", function () {
+  test("calculator.add(1, 2)", function () {
+    expect(calculator.add(1, 2)).toBe(3);
+  });
+
+  test("calculator.add(800, 200)", function () {
+    expect(calculator.add(800, 200)).toBe(1000);
+  });
+
+  test("calculator.multiply(3 , 2)", function () {
+    expect(calculator.multiply(3, 2)).toBe(6);
+  });
+
+  test("calculator.multiply(7 , 7)", function () {
+    expect(calculator.multiply(7, 7)).toBe(49);
+  });
+
+  test("calculator.sub(100, 69)", function () {
+    expect(calculator.sub(100, 69)).toBe(31);
+  });
+
+  test("calculator.divide(1000, 10)", function () {
+    expect(calculator.divide(1000, 10)).toBe(100);
+  });
+});
