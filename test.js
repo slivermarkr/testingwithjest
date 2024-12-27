@@ -1,3 +1,4 @@
+// capitalize()
 test("capitalize.js file", function () {
   expect(require("./capitalize.js")).toBeDefined();
 });
@@ -5,24 +6,24 @@ test("capitalize.js file", function () {
 const capitalize = require("./capitalize");
 
 describe("capitalizeFirstLetter", function () {
-  test("string > String", function () {
+  test("capitalizeTest#1", function () {
     expect(capitalize("string")).toBe("String");
   });
-  test("word > Word", function () {
+  test("capitalizeTest#2", function () {
     expect(capitalize("word")).toBe("Word");
   });
-  test("hello > Hello", function () {
+  test("capitalizeTest#3", function () {
     expect(capitalize("hello")).toBe("Hello");
   });
-  test("ninja > Ninja", function () {
+  test("capitalizeTest#4", function () {
     expect(capitalize("ninja")).toBe("Ninja");
   });
-  test("mamamia > Mamamia", function () {
+  test("capitalizeTest#5", function () {
     expect(capitalize("mamamia")).toBe("Mamamia");
   });
 });
 
-// ReverseString()
+// reverseString()
 test("reverseStringFile", function () {
   expect(require("./reverseString.js")).toBeDefined();
 });
@@ -102,5 +103,34 @@ describe("caesarcipherTest", function () {
 
   test("caesarcipher#4", function () {
     expect(caesarcipher("abc", 12)).toBe("mno");
+  });
+});
+
+// analyzeArray()
+test("analyzeArrayFile", function () {
+  expect(require("./analyzeArray.js")).toBeDefined();
+});
+
+const analyzeArr = require("./analyzeArray.js");
+
+describe("analyzeArrayTest", function () {
+  test("analyzeArrayTest#1", function () {
+    expected = {
+      average: 3,
+      min: 1,
+      max: 5,
+      length: 5,
+    };
+    expect(analyzeArr((input = [1, 2, 3, 4, 5]))).toEqual(expected);
+  });
+
+  test("analyzeArrayTest#2", function () {
+    expected = {
+      average: 4,
+      min: 1,
+      max: 8,
+      length: 6,
+    };
+    expect(analyzeArr((input = [1, 8, 3, 4, 2, 6]))).toEqual(expected);
   });
 });

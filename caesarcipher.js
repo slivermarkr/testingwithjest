@@ -23,5 +23,4 @@ function helper(char, count) {
     return String.fromCharCode(code);
   }
 }
-console.log(caesarcipher("XYZ", 11));
 module.exports = caesarcipher;
