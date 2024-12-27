@@ -1,9 +1,9 @@
 // capitalize()
 test("capitalize.js file", function () {
-  expect(require("./capitalize.js")).toBeDefined();
+  expect(require("./functions/capitalize.js")).toBeDefined();
 });
 
-const capitalize = require("./capitalize");
+const capitalize = require("./functions/capitalize.js");
 
 describe("capitalizeFirstLetter", function () {
   test("capitalizeTest#1", function () {
@@ -25,10 +25,10 @@ describe("capitalizeFirstLetter", function () {
 
 // reverseString()
 test("reverseStringFile", function () {
-  expect(require("./reverseString.js")).toBeDefined();
+  expect(require("./functions/reverseString.js")).toBeDefined();
 });
 
-const reverseString = require("./reverseString");
+const reverseString = require("./functions/reverseString.js");
 
 describe("reverseStringTest", function () {
   test("reverseString('hello world')", function () {
@@ -46,10 +46,10 @@ describe("reverseStringTest", function () {
 
 // calculator object
 test("calculator", function () {
-  expect(require("./calculator.js")).toBeDefined();
+  expect(require("./functions/calculator.js")).toBeDefined();
 });
 
-const calculator = require("./calculator");
+const calculator = require("./functions/calculator.js");
 
 describe("calculatorTest", function () {
   test("calculator.add(1, 2)", function () {
@@ -79,10 +79,10 @@ describe("calculatorTest", function () {
 
 // caesarchipher()
 test("caesarchiperFile", function () {
-  expect(require("./caesarcipher.js")).toBeDefined();
+  expect(require("./functions/caesarcipher.js")).toBeDefined();
 });
 
-const caesarcipher = require("./caesarcipher.js");
+const caesarcipher = require("./functions/caesarcipher.js");
 
 describe("caesarcipherTest", function () {
   test("caesarcipher#1", function () {
@@ -108,10 +108,10 @@ describe("caesarcipherTest", function () {
 
 // analyzeArray()
 test("analyzeArrayFile", function () {
-  expect(require("./analyzeArray.js")).toBeDefined();
+  expect(require("./functions/analyzeArray.js")).toBeDefined();
 });
 
-const analyzeArr = require("./analyzeArray.js");
+const analyzeArr = require("./functions/analyzeArray.js");
 
 describe("analyzeArrayTest", function () {
   test("analyzeArrayTest#1", function () {
