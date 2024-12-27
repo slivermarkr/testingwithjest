@@ -75,3 +75,32 @@ describe("calculatorTest", function () {
     expect(calculator.divide(1000, 10)).toBe(100);
   });
 });
+
+// caesarchipher()
+test("caesarchiperFile", function () {
+  expect(require("./caesarcipher.js")).toBeDefined();
+});
+
+const caesarcipher = require("./caesarcipher.js");
+
+describe("caesarcipherTest", function () {
+  test("caesarcipher#1", function () {
+    expect(caesarcipher("abc", 3)).toBe("def");
+  });
+
+  test("caesarcipher#1", function () {
+    expect(caesarcipher("HeLLo World!", 3)).toBe("KhOOr Zruog!");
+  });
+
+  test("caesarcipher#2", function () {
+    expect(caesarcipher("Hello World", 5)).toBe("Mjqqt Btwqi");
+  });
+
+  test("caesarcipher#3", function () {
+    expect(caesarcipher("XYZ", 26)).toBe("XYZ");
+  });
+
+  test("caesarcipher#4", function () {
+    expect(caesarcipher("abc", 12)).toBe("mno");
+  });
+});
